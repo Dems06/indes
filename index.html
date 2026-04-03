@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="logo.jpg" type="image/jpg">
+<meta charset="UTF-8">
+<title>Online Portal V1.88</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+
+/* BODY */
+body {
+    margin:0;
+    background:#f3f3f3;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.topbar {
+    background:#3f5c97;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+
+.topbar-left {
+    display:flex;
+    align-items:center;
+}
+
+.logo {
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:white;
+    padding:4px;
+    margin-right:12px;
+}
+
+.portal-text {
+    color:white;
+    font-size:18px;
+}
+
+.logout-icon {
+    color:white;
+    font-size:18px;
+}
+
+/* LAYOUT */
+.main {
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width:260px;
+    background:#2f2f2f;
+    min-height:100vh;
+    color:white;
+    padding-top:15px;
+}
+
+.sidebar .user {
+    padding:15px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.sidebar a {
+    display:block;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+}
+
+.sidebar a:hover {
+    background:#444;
+}
+
+/* CONTENT */
+.content {
+    flex:1;
+    padding:30px;
+}
+
+/* NOTIFICATION BOX */
+.notice {
+    background:#f5e6c8;
+    border:1px solid #e2cfa3;
+    padding:20px;
+    border-radius:6px;
+    color:#6b4f1d;
+}
+
+/* BALANCE */
+.balance {
+    margin-top:30px;
+    padding:15px;
+    font-weight:600;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* TERM */
+.term-title {
+    text-align:center;
+    color:#a94442;
+    margin:30px 0;
+}
+
+.term-btn {
+    width:100%;
+    padding:15px;
+    margin-bottom:12px;
+    background:#e6e6e6;
+    border:none;
+    border-radius:6px;
+}
+
+.term-btn:hover {
+    background:#dcdcdc;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="topbar">
+    <div class="topbar-left">
+        <img src="logo.jpg" class="logo">
+        <span class="portal-text">Online Portal V1.88</span>
+    </div>
+    <span class="glyphicon glyphicon-log-out logout-icon"></span>
+</div>
+
+<div class="main">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+    <div class="user">
+        PRINCE MICHAEL JAMES<br>
+        (25241464)
+    </div>
+
+    <a href="#">📄 Manage Application</a>
+    <a href="#">🧾 E-Assessment Slip</a>
+    <a href="#">📥 E-Promissory Note</a>
+    <a href="#">📚 Courses Offering Inquiry</a>
+    <a href="#">📘 Curriculum Viewing</a>
+    <a href="#">📋 Transactions</a>
+    <a href="#">❓ How to Pay?</a>
+    <a href="#">☁ Downloadable Resources</a>
+    <a href="#">⚙ Change My Password</a>
+    <a href="#">🚪 Logout</a>
+
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <div class="notice">
+        <p><b>🔔 1/26/2026 11:46:54 AM:</b>  Payment verification for 2ND SEM. SY 2025-2026 was successfully approved by REGINE VELASQUEZ. YOU ARE NOW OFFICIALLY ENROLLED. Please see the download link for your official study load (STEP 4).</p>
+
+        <p><b>🔔 1/11/2026 12:15:01 PM:</b> Enrollment application for 2ND SEM. SY 2025-2026 was successfully approved by MA CATHERINE CARUMBA.
+Please settle your outstanding balance and registration fee (refer to the payment guide link). After payments have been made, kindly take photos or scan your payment receipts or slips and upload it in STEP 3.</p>
+
+        <br>
+        <a href="#">🔗 View More Notifications</a>
+
+        <hr>
+
+        <p>Please take time to answer our Client Satisfaction Survey.</p>
+        <a href="#">🔗 EDP/ID Office Client Satisfaction Survey</a>
+    </div>
+
+    <div class="balance">
+        <span>▶ OUTSTANDING BALANCE</span>
+        <span>45,571.00 PHP</span>
+    </div>
+
+    <div class="term-title">
+        Choose a school term:
+    </div>
+
+    <button class="term-btn">2ND SEM. SY 2025-2026</button>
+    <button class="term-btn">1ST SEM. SY 2025-2026</button>
+    <button class="term-btn">SUMMER OF 2025</button>
+    <button class="term-btn">2ND SEM. SY 2024-2025</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
